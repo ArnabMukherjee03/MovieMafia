@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aleo', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: Argent;
+    src: url(./Fonts/Fontspring-DEMO-argentcf-lightitalic.otf);
+  }
+h1,h2,h3,h4 {
+    font-family: 'Alegreya', serif;
 }
+.nav-link{
+    /* color: #000!important; */
+    color: #fff!important;
+}
+
+.logo{
+    font-family: Argent;
+    font-size: 24px;
+    background: linear-gradient(to right, #01b4e4, #00bed6, #3fc5c3, #6acbb0, #90cea1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #000!important; 
+    background-color: #fff!important;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+

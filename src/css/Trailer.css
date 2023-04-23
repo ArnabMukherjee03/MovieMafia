@@ -1,0 +1,21 @@
+.trailer{
+    
+    color: #fff;
+}
+
+.trailercard img{
+
+    border-radius: 10px;
+    width: 100%;
+}
+
+.trailer-head{
+    font-size: 1rem;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.link:hover{
+    color: #fff;
+}

@@ -1,0 +1,44 @@
+
+.media-scroller{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    overflow-x: scroll;
+    height: auto;
+}
+.moviecard > img{
+    width: 100%;
+    
+}
+
+.card-title{
+    font-size: 1.3rem;
+}
+
+.des{
+    font-size: .8rem;
+    margin-bottom: 2px!important;
+}
+
+/* Navlink */
+.popularbtn{
+    border: 1px solid #032541;
+    gap: 0px;
+    height: 35px;
+    border-radius: 20px;
+}
+.tvbtn{
+    text-decoration: none;
+    color: #000;
+    padding-inline: 10px;
+}
+
+.tvbtn:hover{
+    background: #032541;
+    color: #90cea1!important;
+    height: 35px;
+    padding-inline: 10px;
+    border-radius: 20px;
+    padding-top: 5px;
+}
