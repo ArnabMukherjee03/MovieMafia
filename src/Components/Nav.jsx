@@ -23,10 +23,10 @@ const Nav = ()=>{
                             Movies
                           </NavLink>
                           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><NavLink className="dropdown-item" href="#">Popular</NavLink></li>
-                            <li><NavLink className="dropdown-item" href="#">Now Playing</NavLink></li>
-                            <li><NavLink className="dropdown-item" href="#">Upcoming</NavLink></li>
-                            <li><NavLink className="dropdown-item" href="#">Top Rated</NavLink></li>
+                            <li><NavLink to="movies/popular" className="dropdown-item" >Popular</NavLink></li>
+                            <li><NavLink to="movies/now_playing" className="dropdown-item" href="#">Now Playing</NavLink></li>
+                            <li><NavLink to="movies/upcoming" className="dropdown-item" href="#">Upcoming</NavLink></li>
+                            <li><NavLink to="movies/top_rated" className="dropdown-item" href="#">Top Rated</NavLink></li>
                           </ul>
                         </li>
                         <li className="nav-item dropdown">
@@ -34,13 +34,13 @@ const Nav = ()=>{
                             Tv Shows
                           </NavLink>
                           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><NavLink className="dropdown-item" href="#">Popular</NavLink></li>
-                            <li><NavLink className="dropdown-item" href="#">On Tv</NavLink></li>
-                            <li><NavLink className="dropdown-item" href="#">Top Rated</NavLink></li>
+                            <li><NavLink to="tv_shows/popular" className="dropdown-item" >Popular</NavLink></li>
+                            <li><NavLink to="tv_shows/airing_today" className="dropdown-item" href="#">On Tv</NavLink></li>
+                            <li><NavLink to="tv_shows/top_rated"className="dropdown-item" href="#">Top Rated</NavLink></li>
                           </ul>
                         </li>
                     <li class="nav-item">
-                       <NavLink className="nav-link" aria-current="page" href="#">About</NavLink>
+                       <NavLink  className="nav-link" aria-current="page" href="#">About</NavLink>
                        
                      </li>
                      <li class="nav-item">

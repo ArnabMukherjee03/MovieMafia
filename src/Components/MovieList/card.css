@@ -1,0 +1,35 @@
+/* Card */
+.Moviecard{
+    width: 200px;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    position: relative;
+}
+.Moviecard img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.Moviecard h5{
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    top: -5px;
+    right: -8px;
+    background: rgb(3,37,65);
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 10px;
+}
+
+.Moviecard p{
+    font-size: 14px;
+}
+

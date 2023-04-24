@@ -4,6 +4,7 @@ import '../../css/Home.css'
 import Poster from "./Poster"
 import Popular from "./Popular"
 import Trailer from "./Trailer"
+import Upcoming from "./upcoming"
 
 
 const Home = ()=>{
@@ -12,6 +13,7 @@ const Home = ()=>{
           <Poster/>
           <Popular/>
           <Trailer/>
+          <Upcoming/>
         </>
     )
 }

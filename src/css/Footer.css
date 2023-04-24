@@ -1,0 +1,27 @@
+.footer{
+    height: 300px;
+}
+
+.item{
+    flex-direction: column;
+    height: 300px;
+}
+
+.footer-item{
+    gap: 40px;
+}
+.item:nth-child(1){
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.footer-btn{
+    width: 100%;
+    padding: 8px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
