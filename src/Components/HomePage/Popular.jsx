@@ -42,6 +42,8 @@ const Popular = ()=>{
                         PopularMovies.map(movie =>
                         {if(key === 'tv'){
                             return<Card
+                                type = "tv"
+                                id = {movie.id}
                                 imgsrc={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`}
                                 title = {movie ? movie.name:""}
                                 des={movie ? movie.overview.slice(0,118)+"..." : ""}
@@ -50,6 +52,8 @@ const Popular = ()=>{
                             />
                         } else if(key === 'movie'){
                             return<Card
+                                type = "movie"
+                                id = {movie.id}
                                 imgsrc={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`}
                                 title = {movie ? movie.original_title:""}
                                 des={movie ? movie.overview.slice(0,118)+"..." : ""}

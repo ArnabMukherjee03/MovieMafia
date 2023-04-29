@@ -43,6 +43,8 @@ const MovieList = ()=>{
                {
                 Movie.map( movie =>(
                   <Card
+                    type = "movie"  
+                    id={movie.id}
                     imgsrc={`https://image.tmdb.org/t/p/original${movie && movie.poster_path}`}
                     title={movie.original_title}
                     date={movie.release_date}

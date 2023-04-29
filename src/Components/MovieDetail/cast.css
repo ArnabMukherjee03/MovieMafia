@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+.cast .media-scroller{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 10%;
+    overflow-x: scroll;
+   
+}
+.cast{
+    height: 60vh;
+}
+.cast h3{
+    font-family: 'Castoro Titling', cursive;
+}
+.Review h3{
+    font-family: 'Castoro Titling', cursive;
+}
+.castcard h5{
+    font-size: 14px;
+}
+
+.castcard img{
+     width: 100%;
+}

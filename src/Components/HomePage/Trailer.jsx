@@ -27,7 +27,7 @@ const Trailer = ()=>{
                 <div className="mx-4 mt-5 media-scroller traile-media">
                     {
                         TrendingMovies.map(movie => 
-                           (<Link className="link" to={`/${movie.id}`} >
+                           (<Link className="link" to={`movie/${movie.id}`} >
                             <div className="trailercard"   >
                                  <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`}  alt="" />
                                  <h5 className="mt-2 trailer-head text-center">{movie.original_title}</h5>

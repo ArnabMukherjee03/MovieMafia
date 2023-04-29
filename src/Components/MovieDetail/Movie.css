@@ -1,0 +1,71 @@
+.banner{
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow-x: hidden;
+    
+}
+.col-11{
+    height: auto;
+    gap: 20px;
+}
+
+.banner-content{
+    flex-basis: 80%;
+    height: 80vh;
+}
+p{
+    margin-bottom: 0;
+}
+.banner-content h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+i{
+    font-size: 10px;
+}
+
+.genres{
+    gap: 10px;
+}
+
+.movie-type{
+   gap: 16px;
+}
+
+.rate{
+    font-size: 18px;
+    font-weight: 700;
+    gap: 10px;
+}
+.progress{
+    width: 100px!important;
+    height: 5px;
+}
+.progress-bar{
+    background: rgba(3,37,65);
+}
+
+.trailer{
+    gap: 8px;
+}
+
+.trailer i{
+    font-size: 16px;
+}
+
+.overview h2{
+    font-size: 22px;
+    
+}
+
+.director{
+   gap: 60px;
+}
+
+.director-content{
+    flex-direction: column;
+}

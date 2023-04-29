@@ -40,3 +40,11 @@ h1,h2,h3,h4 {
     width: 10px;
 }
 
+.NavLink{
+    text-decoration: none;
+    color: #000;
+}
+
+.NavLink:hover{
+    color: #000;
+}

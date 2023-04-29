@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 import "../../css/upcoming.css";
 
@@ -24,31 +25,34 @@ const Upcoming = () =>{
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-8 mx-auto mt-3 gallery ">
-                                <div className="box">
+                              <NavLink className="box NavLink" to={`movie/${UpcomingMovies[4] && UpcomingMovies[4].id}`}>
                                 <div className="img" style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${UpcomingMovies[4] && UpcomingMovies[4].backdrop_path})`}}></div>
                                 <h3 className="mt-2">{UpcomingMovies[4] && UpcomingMovies[4].original_title}</h3>
-                        
-                                </div>
-                            <div className="box">
+                                </NavLink>
+                            <NavLink className="box NavLink" to={`movie/${UpcomingMovies[6] && UpcomingMovies[6].id}`}>
+                
                                 <img src={`https://image.tmdb.org/t/p/original${UpcomingMovies[6] && UpcomingMovies[6].backdrop_path}`} alt=""  />
                                 <h3 className="mt-2">{UpcomingMovies[6] && UpcomingMovies[6].original_title}</h3>
-                        
-                            </div>
-                            <div className="box">
+                    
+                            </NavLink>
+                            <NavLink className="box NavLink" to={`movie/${UpcomingMovies[16] && UpcomingMovies[16].id}`}>
+                            
                                 <img src={`https://image.tmdb.org/t/p/original${UpcomingMovies[16] && UpcomingMovies[16].backdrop_path}`} alt=""  />
                                 <h3 className="mt-2">{UpcomingMovies[16] && UpcomingMovies[16].original_title}</h3>
                                 
-                            </div>
-                            <div className="box">
+                            </NavLink>
+                            <NavLink className="box NavLink" to={`movie/${UpcomingMovies[7] && UpcomingMovies[7].id}`}>
+                            
                                 <img src={`https://image.tmdb.org/t/p/original${UpcomingMovies[7] && UpcomingMovies[7].backdrop_path}`} alt=""  />
                                 <h3 className="mt-2">{UpcomingMovies[7] && UpcomingMovies[7].original_title}</h3>
-                        
-                            </div>
-                            <div className="box">
+                    
+                            </NavLink>
+                            <NavLink className="box NavLink" to={`movie/${UpcomingMovies[3] && UpcomingMovies[3].id}`}>
+                            
                                 <img src={`https://image.tmdb.org/t/p/original${UpcomingMovies[3] && UpcomingMovies[3].backdrop_path}`} alt=""  />
                                 <h3 className="mt-2">{UpcomingMovies[3] && UpcomingMovies[3].original_title}</h3>
-                                
-                            </div>   
+                                 
+                            </NavLink> 
                         </div>
                     </div>
                 </div>

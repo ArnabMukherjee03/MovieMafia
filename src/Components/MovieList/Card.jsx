@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Skeleton ,{ SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import "./card.css"
+import { NavLink } from "react-router-dom";
 const Card = (Props)=>{
     const[isLoading,setLoading]=useState(true);
     useEffect(()=>{
@@ -20,6 +21,7 @@ const Card = (Props)=>{
               </p>
             </SkeletonTheme>
             :
+         <NavLink className="NavLink" to={`/${Props.type}/${Props.id}`}>
          <div className="Moviecard">
              <img src={Props.imgsrc} alt="" srcset="" />
              <h5 className="ps-2 pt-3">{Props.title}</h5>
@@ -28,6 +30,7 @@ const Card = (Props)=>{
              {Props.rate} %
              </div>
          </div>
+         </NavLink>
         }
         </>
      )
