@@ -22,7 +22,7 @@ const Trailer = ()=>{
                 rgba(3,37,65,.8)
               ),URL('https://image.tmdb.org/t/p/original/9n2tJBplPbgR2ca05hS5CKXwP2c.jpg')`,backgroundPosition:"center",backgroundSize:"cover"}}>
             <div className="d-flex">
-                <h3 className="ms-4 mt-5">Latest Movies</h3>
+                <h3 className="ms-4 mt-5 ">Latest Movies</h3>
             </div>
                 <div className="mx-4 mt-5 media-scroller traile-media">
                     {

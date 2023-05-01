@@ -8,6 +8,9 @@ import Footer from "./Components/Footer.jsx";
 import MovieList from "./Components/MovieList/Movielist.jsx";
 import Tvshows from "./Components/TvShows/Tvshows.jsx";
 import Movie from "./Components/MovieDetail/Movie.jsx";
+import Person from "./Components/People/Person.jsx";
+import PeopleDetail from "./Components/People/PeopleDetail.jsx";
+import Contact from "./Components/Contact.jsx";
 const App = ()=>{
   return(
     <>
@@ -17,6 +20,9 @@ const App = ()=>{
         <Route path="movies/:type" Component={MovieList}></Route>
         <Route path="tv_shows/:type" Component={Tvshows}></Route>
         <Route path=":type/:id" Component={Movie}></Route>
+        <Route path="/person" Component={Person}></Route>
+        <Route path="/person/:id" Component={PeopleDetail}></Route>
+        <Route path="/contact" Component={Contact}></Route>
       </Routes>
       <Footer/>
     </>

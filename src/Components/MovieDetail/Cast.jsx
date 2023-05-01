@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./cast.css";
+import { NavLink } from "react-router-dom";
 
 const Cast = (Props) =>{
     const[cast,setcast] = useState([]);
@@ -17,19 +18,19 @@ const Cast = (Props) =>{
                 cast.map(cast =>{
                     if(cast.profile_path === null){
                         return(
-                        <div className="castcard">
+                        <NavLink  to={`/person/${cast.id}`} className="NavLink castcard">
                                  <img src="https://feb.kuleuven.be/drc/LEER/visiting-scholars-1/image-not-available.jpg/image"  alt="" />
                                  <h5 className="mt-2 text-center">{cast && cast.original_name}</h5>
                                  <p className="mt-2 text-center" style={{fontSize:"14px"}}>{cast && cast.character}</p>
-                        </div>)
+                        </NavLink>)
                     }else{
 
                         return(
-                        <div className="castcard">
+                        <NavLink to={`/person/${cast.id}`} className="NavLink castcard">
                                  <img src={`https://image.tmdb.org/t/p/original${cast.profile_path}`}  alt="" />
                                  <h5 className="mt-2 text-center">{cast && cast.original_name}</h5>
                                  <p className="mt-2 text-center" style={{fontSize:"14px"}}>{cast && cast.character}</p>
-                        </div>)
+                        </NavLink>)
 
                     }
                 })

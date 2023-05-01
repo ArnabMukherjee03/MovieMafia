@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+.Person h3{
+    font-family: 'Castoro Titling', cursive;
+}
+.personitems{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.person-card{
+    width: 20%;
+}
+
+.personname{
+    font-size: 1.2rem;
+}
+
+.person-card img{
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .person-card{
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+.peopleImg{
+  width: 25%;
+}
+.peopleImg img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.peopledetail{
+    gap: 40px;
+}
+
+.peopleContent{
+    width: 70%;
+}
+.peopleContent h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.peopleContent h5{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.bio{
+    font-size: 1rem;
+    
+}
+
+.peopledetail .media-scroller{
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 15%;
+    overflow-x: scroll;
+    height: auto;
+}
+
+.movieCard img{
+    width: 100%;
+}
+
+.moviename{
+    font-weight: 700;
+}
+
+.personalInfo h3{
+    font-family: 'Castoro Titling', cursive;
+}
+.personalInfoContent{
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:500px){
+    .peopledetail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .peopleImg{
+        width: 50%;
+      }
+      .peopleContent{
+        width: 100%;
+    }
+    .peopledetail h1{
+        text-align: center;
+    }
+    .peopledetail .media-scroller{
+        grid-auto-columns: 35%;
+    }
+    .personalInfoContent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .personalInfo h3{
+        text-align: center;
+    }
+}

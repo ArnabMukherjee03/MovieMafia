@@ -39,7 +39,7 @@ const MovieList = ()=>{
         <>
             <div className="container-fluid">
                <div className="row">
-               <div className="col-10 mx-auto movielistbar mt-3">
+               <div className="col-lg-10 mx-auto movielistbar mt-3">
               
                {
                 Movie.map( movie =>(

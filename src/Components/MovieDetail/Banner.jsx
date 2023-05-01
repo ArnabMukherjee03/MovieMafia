@@ -107,6 +107,67 @@ const Banner = (Props)=>{
                 </div>
               </div>
             </div>
+            {/* Small Screen */}
+            <div className="banner-small d-flex">
+                <div className="banner-top" style={{backgroundImage: `linear-gradient(
+                rgba(3,37,65,.5), 
+                rgba(3,37,65,.5)
+              ),url(https://image.tmdb.org/t/p/original${moviedetails.backdrop_path})`}}>
+                    <img src={`https://image.tmdb.org/t/p/original${moviedetails.poster_path}`} width={100} className="mt-2 ms-4" alt="" />
+                </div>
+                <div className="banner-small-content pb-2">
+                <h2 className="text-center mt-3">{moviedetails.original_title || moviedetails.name}</h2>
+                {/* Trailer */}
+                {  trailer.map(trailer =>{
+                                return(
+                                    <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={trailer.key} onClose={() => setOpen(false)} />
+                                )
+                            })
+                 }          <div className="d-flex align-items-center justify-content-center" onClick={()=> setOpen(true)} style={{cursor:"pointer"}}>
+                                <i class="fa-solid fa-play" style={{color:"#fff"}}></i>
+                                <p className="ms-3">Play Trailer</p>
+                            </div>
+                {/* trdcfhj */}
+                <div className="small-x mt-2  d-flex align-items-center justify-content-center">
+                            <div className="d-flex  small-date  align-items-center justify-content-center">
+                            <p className="">{moviedetails.release_date || moviedetails.first_air_date}</p>
+                            {Props.type === "movie" ? <p className="runtime">{Math.floor(moviedetails.runtime / 60)}h {moviedetails.runtime % 60}m</p> : <p className="runtime">Seasons : {moviedetails.number_of_seasons}</p>}
+                            </div>
+                            <div className="smallgenres  d-flex ">
+                                  {
+                                        genres.map(movie =>{
+                                        return((
+                                            <p>{movie.name}</p>
+                                        ))
+                                      })
+                                  }
+                            </div>
+                         </div>
+                         <div className="smalltagline mt-3 ps-3">
+                            <p className="ps-1">{moviedetails.tagline}</p>
+                         </div>
+                    {/* Overview */}
+                    <div className="overview mt-2  ps-3">
+                            <h2 className="ps-1">Overview</h2>
+                            <p className="ps-1">
+                                {moviedetails.overview}
+                            </p>
+                    </div>
+                    {/* Director */}
+                    <div className="smalldirector d-flex ps-3  mt-2">
+                            {
+                                director.map(director=>{
+                                    return (
+                                        <div className="ps-1 d-flex director-content">
+                                            <p >{director.original_name}</p>
+                                            <p>{director.job}</p>
+                                        </div>
+                                    )
+                            })
+                            }
+                         </div>
+                </div>
+            </div>
         </>
     )
 }

@@ -17,7 +17,7 @@ const Revenue = (Props)=>{
         <>
             <div className="container-fluid Revenue">
                 <div className="row">
-                    <div className="col-8 d-flex mx-auto align-items-center" style={{height:"20vh",justifyContent:"space-evenly",fontSize:"16px"}}>
+                    <div className="col-lg-8 mt-2 revenueContent d-flex mx-auto align-items-center" style={{height:"20vh",justifyContent:"space-evenly",fontSize:"16px"}}>
                          <div className="Status text-center">
                             <p>Status</p>
                             <p>{moviedetails.status}</p>

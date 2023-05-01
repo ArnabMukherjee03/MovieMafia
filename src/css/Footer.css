@@ -25,3 +25,17 @@ li{
     border: none;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 500px) {
+    .footer{
+        height: auto;
+    }
+    
+    .footer-item{
+        flex-direction: column;
+        gap: 30px!important;
+    }
+    .item{
+        height: auto;
+    }
+}

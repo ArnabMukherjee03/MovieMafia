@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Revenue from "./Revenue";
 import Cast from "./Cast";
 import Review from "./Review";
+import Similar from "./Similar";
 
 
 const Movie = () =>{
@@ -15,6 +16,7 @@ const Movie = () =>{
            <Banner id={id}  type={type}/>
            <Revenue id={id} type={type}/>
            <Cast id={id} type={type}/>
+           <Similar id={id} type={type}/>
            <Review id={id} type={type}/>
         </>
     )

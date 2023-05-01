@@ -1,0 +1,16 @@
+.review-avtar{
+    gap: 30px;
+}
+
+.reviewPara{
+    margin-left: 90px;
+}
+
+@media screen and (max-width: 500px) {
+    .reviewPara{
+        margin-left: 0px;
+        text-align: justify;
+        font-size: 12px;
+    }
+    
+}

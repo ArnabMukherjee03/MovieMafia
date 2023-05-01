@@ -1,5 +1,6 @@
 import React from "react";
 import '../../css/Home.css'
+import "../../Responsive/Home.css"
 
 import Poster from "./Poster"
 import Popular from "./Popular"

@@ -6,6 +6,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
     position: relative;
+    flex-direction: column;
 }
 .Moviecard img{
     width: 100%;
@@ -33,3 +34,19 @@
     font-size: 14px;
 }
 
+@media screen and (max-width: 500px) {
+    .Moviecard{
+        width: 100%;
+        flex-direction: row;
+    }
+    .Moviecard img{
+        width: 30%;
+        border-radius: 10px 0 0 10px!important;
+    }
+    .Moviecard h5{
+        font-size: 1.3rem!important;
+    }
+    .circle{
+        display: none!important;
+    }
+}

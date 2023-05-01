@@ -22,10 +22,12 @@ const Card = (Props)=>{
             </SkeletonTheme>
             :
          <NavLink className="NavLink" to={`/${Props.type}/${Props.id}`}>
-         <div className="Moviecard">
+         <div className="Moviecard d-flex">
              <img src={Props.imgsrc} alt="" srcset="" />
+             <div className="moviecardcontent">
              <h5 className="ps-2 pt-3">{Props.title}</h5>
-             <p className="mt-2 ps-2">{Props.date}</p>
+             <p className="mt-2 ps-2 mb-2">{Props.date}</p>
+             </div>
              <div className="circle d-flex align-items-center justify-content-center">
              {Props.rate} %
              </div>

@@ -29,10 +29,10 @@ const Popular = ()=>{
 
     return(
         <>
-            <div className="container-fluid my-4 popular">
-            <div className="d-flex">
-                <h3 className="ms-4 mt-5">What's Popular</h3>
-                <div className="d-flex mt-5 ms-4 popularbtn align-items-center justify-content-center">
+            <div className="container-fluid my-4  popular">
+            <div className="d-flex pop-top ">
+                <h3 className="ms-4 mt-5 head ">What's Popular</h3>
+                <div className="d-flex mt-5 ms-4  popularbtn align-items-center justify-content-center">
                    <NavLink className="tvbtn" onClick={(e)=>{getdata('tv')}}>On Tv</NavLink>
                    <NavLink className="tvbtn" onClick={(e)=>{getdata('movie')}}>In Theaters</NavLink>
                 </div>

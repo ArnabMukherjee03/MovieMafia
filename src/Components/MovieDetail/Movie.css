@@ -69,3 +69,39 @@ i{
 .director-content{
     flex-direction: column;
 }
+.banner-small{
+    display: none!important;
+    background: rgba(3,37,65);
+    color: #fff;
+}
+
+.banner-top{
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.small-x{
+    flex-direction: column;
+}
+.small-date{
+    gap: 10px;
+}
+.smallgenres{
+    margin-top: 5px;
+    gap: 5px;
+}
+.smallgenres p{
+    font-size: 14px;
+}
+
+@media screen and (max-width:500px){
+    .banner{
+        display: none!important;
+    }
+    .banner-small{
+        display: block!important;
+    }
+    
+}

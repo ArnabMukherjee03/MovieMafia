@@ -24,7 +24,7 @@ const Upcoming = () =>{
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-8 mx-auto mt-3 gallery ">
+                        <div className="col-lg-8 col-10 mx-auto mt-3 gallery ">
                               <NavLink className="box NavLink" to={`movie/${UpcomingMovies[4] && UpcomingMovies[4].id}`}>
                                 <div className="img" style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${UpcomingMovies[4] && UpcomingMovies[4].backdrop_path})`}}></div>
                                 <h3 className="mt-2">{UpcomingMovies[4] && UpcomingMovies[4].original_title}</h3>

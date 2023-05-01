@@ -4,3 +4,12 @@
     font-family: 'Castoro Titling', cursive;
     color: rgb(3,37,65)!important;
 }
+
+@media screen and (max-width: 500px) {
+    .revenueContent{
+        height: auto !important;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}
