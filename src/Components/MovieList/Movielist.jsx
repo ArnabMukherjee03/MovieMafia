@@ -3,19 +3,27 @@ import { useParams } from "react-router-dom";
 import "../../css/Pagination.css";
 import "./Movielist.css";
 import Card from "./Card";
+import Genres from "./Genres"
+import useGenre from "../../Hooks/useGenre";
+
 const MovieList = ()=>{
     const {type} = useParams();
 
     const[Movie,setMovies] = useState([]);
     const[page,setpage] = useState(1);
     const[nbpages,setnbpages] = useState(0);
-    useEffect(()=>{
-        getData()
-    },[])
+    const[selectedGenres,setSelectedGenres] = useState([]);
+    const[genres,setGenres] = useState([]);
+    const genreforurl = useGenre(selectedGenres);
     useEffect(() => {
-        getData()
+        fetch(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US&page=${page}&with_genres=${genreforurl}`)
+        .then(res => res.json())
+        .then(data => {
+            setMovies(data.results)
+            setnbpages(data.total_pages)}
+        )
         window.scrollTo(0,0);
-    }, [type,page])
+    }, [type,page,genreforurl])
     
     const prev = ()=>{  
         if(page <= 1){
@@ -25,24 +33,20 @@ const MovieList = ()=>{
         }
     }
     
-    const getData = () => {
-        fetch(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US&page=${page}`)
-        .then(res => res.json())
-        .then(data => (
-            setMovies(data.results),
-            setnbpages(data.total_pages))
-        )
-    }
     return(
         <>
            
             <div className="container-fluid">
                <div className="row">
-               <div className="col-lg-10 mx-auto movielistbar mt-3">
-              
+               <div className="col-lg-10 mx-auto mt-2 d-flex justify-content-center align-items-center">
+               <Genres type="movie" setpage={setpage} selectedGenres={selectedGenres} genres={genres} setSelectedGenres={setSelectedGenres} setGenres={setGenres} />
+               </div>
+               <div className="col-lg-10 mx-auto movielistbar mt-4">
+               
                {
                 Movie.map( movie =>(
                   <Card
+                    key={movie.id}
                     type = "movie"  
                     id={movie.id}
                     imgsrc={`https://image.tmdb.org/t/p/original${movie && movie.poster_path}`}
