@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c987b99.css",
+    "main.js": "/static/js/main.b62162a5.js",
+    "static/media/Fontspring-DEMO-argentcf-lightitalic.otf": "/static/media/Fontspring-DEMO-argentcf-lightitalic.d871d36815f2401bdccc.otf",
+    "index.html": "/index.html",
+    "main.3c987b99.css.map": "/static/css/main.3c987b99.css.map",
+    "main.b62162a5.js.map": "/static/js/main.b62162a5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c987b99.css",
+    "static/js/main.b62162a5.js"
+  ]
+}
