@@ -15,7 +15,7 @@ const Contact = ()=>{
         const{name,value}= event.target;
         setData((preval)=>{
            return{
-            ... preval,
+            ...preval,
             [name]: value,
         }
         })

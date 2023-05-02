@@ -118,7 +118,7 @@ const Banner = (Props)=>{
                 <div className="banner-small-content pb-2">
                 <h2 className="text-center mt-3">{moviedetails.original_title || moviedetails.name}</h2>
                 {/* Trailer */}
-                {  trailer.map(trailer =>{
+                {  trailer.slice(0,1).map(trailer =>{
                                 return(
                                     <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={trailer.key} onClose={() => setOpen(false)} />
                                 )
