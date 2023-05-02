@@ -5,7 +5,7 @@ import "../../Responsive/Home.css"
 import Poster from "./Poster"
 import Popular from "./Popular"
 import Trailer from "./Trailer"
-import Upcoming from "./upcoming"
+import Upcoming from "./Upcome.jsx"
 
 
 const Home = ()=>{
