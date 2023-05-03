@@ -58,6 +58,11 @@ This will start the application. Open a web browser and navigate to http://local
 ## Screenshots
 
 ![App Screenshot](/Images/Home.png)
+![App Screenshot](/Images/Movie.png)
+![App Screenshot](/Images/moviedetail.png)
+![App Screenshot](/Images/people.png)
+![App Screenshot](/Images/peopledetail.png)
+
 
 
 ## 🍿 Demo
